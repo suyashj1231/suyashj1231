@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="mailto:suyashj@uci.edu">Email</a> ·
-  <a href="https://www.linkedin.com/in/suyashj1231">LinkedIn</a> ·
+  <a href="https://www.linkedin.com/in/jain-suyash/">LinkedIn</a> ·
   <a href="https://jain-suyash.vercel.app" target="_blank">Portfolio</a> ·
   <a href="https://github.com/suyashj1231">GitHub</a>
 </p>
