@@ -18,7 +18,7 @@
 
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api?username=suyashj1231
+    src="https://github-readme-stats-xi-liart.vercel.app/api?username=suyashj1231
     &show_icons=true
     &theme=transparent
     &rank_icon=github
@@ -32,7 +32,7 @@
     height="165"
 />
   <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=suyashj1231
+    src="https://github-readme-stats-xi-liart.vercel.app/api/top-langs/?username=suyashj1231
     &layout=donut
     &theme=transparent
     &hide_border=true
