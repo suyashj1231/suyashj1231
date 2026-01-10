@@ -65,19 +65,16 @@
 
 ## 🚀 Featured Projects
 
-## 🚀 Featured Projects
+### 🔎 [Web Search Engine – Inelastic Search](https://github.com/suyashj1231/Inelastic-Search)
 
-### 🔎 Web Search Engine – Information Retrieval, Elasticsearch
+Developed a search engine from scratch, indexing 50,000+ documents with an inverted index and on-disk partial indexing (3-phase merge) to keep memory usage bounded while maintaining query latency under 300 ms without external libraries.  
+Implemented core IR techniques including TF-IDF ranking, Boolean retrieval, Porter stemming, and tokenization, and boosted relevance using PageRank, HITS, and anchor-text indexing for more precise ranking.  
 
-- Developed a search engine from scratch, indexing 50,000+ documents with an inverted index and on‑disk partial indexing (3‑phase merge) to keep memory usage bounded while maintaining query latency under 300 ms without external libraries.  
-- Implemented core IR techniques including TF‑IDF ranking, Boolean retrieval, Porter stemming, and tokenization, and boosted relevance using PageRank, HITS, and anchor‑text indexing for more precise ranking.  
-- 🔗 GitHub: [link here]
+### 🖥️ [OpenGL-Based Terminal Emulator](https://github.com/suyashj1231/OpenGL_Terminal)
 
-### 🖥️ OpenGL‑Based Terminal Emulator – GLAD, GLFW, FreeType (UNIX/Linux)
+Built a GPU-accelerated terminal achieving 460 FPS on large text screens, reducing frame draw time to 2 ms and freeing over 80% of CPU resources for parallel workloads using GLAD, GLFW, and FreeType (UNIX/Linux).  
+Delivered roughly 50% faster text output on datasets exceeding 700K lines, with smoother scrolling, lower input latency, and reduced system load compared to CPU-rendered terminals.  
 
-- Built a GPU‑accelerated terminal achieving 460 FPS on large text screens, reducing frame draw time to 2 ms and freeing over 80% of CPU resources for parallel workloads.  
-- Delivered roughly 50% faster text output on datasets exceeding 700K lines, with smoother scrolling, lower input latency, and reduced system load compared to CPU‑rendered terminals.  
-- 🔗 GitHub: [link here]
 
 
 ---
