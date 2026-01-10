@@ -1,49 +1,77 @@
 [![Suyash's GitHub stats](https://github-readme-stats-xi-liart.vercel.app/api?username=suyashj1231)](https://github.com/suyashj1231/github-readme-stats)
 
-👋 Hi, I'm Suyash
-Computer Science Student | AI & ML Researcher | Software Engineer
+<h1 align="center">Hi, I'm Suyash 👋</h1>
 
-UC Irvine | Irvine, CA
+<p align="center">
+  <strong>Computer Science @ UC Irvine</strong> · AI & ML · Information Retrieval · Systems
+</p>
 
-🎯 About Me
-I'm a passionate Computer Science student at UC Irvine with a strong focus on AI/ML research, information retrieval systems, and software engineering.
+<p align="center">
+  <a href="mailto:suyashj@uci.edu">Email</a> ·
+  <a href="https://www.linkedin.com/in/jain-suyash">LinkedIn</a> ·
+  <a href="https://github.com/suyashj1231">GitHub</a>
+</p>
 
-🔬 Research Interests: Machine Learning, Information Retrieval, Large-scale System Optimization
+---
 
-🚀 Current Focus: Building research experience and developing expertise in AI systems
+## ⚡ GitHub Stats
 
-💻 Tech Stack: Python, C++, JavaScript, System Design, Machine Learning frameworks
+<p align="center">
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=suyashj1231
+    &show_icons=true
+    &theme=transparent
+    &rank_icon=github
+    &include_all_commits=true
+    &count_private=true
+    &title_color=58a6ff
+    &text_color=c9d1d9
+    &icon_color=58a6ff
+    &ring_color=58a6ff"
+    alt="Suyash's GitHub stats"
+    height="165"
+/>
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=suyashj1231
+    &layout=donut
+    &theme=transparent
+    &hide_border=true
+    &langs_count=6
+    &title_color=58a6ff
+    &text_color=c9d1d9"
+    alt="Top languages"
+    height="165"
+/>
+</p>
 
-📚 Taking: CS 121 (Information Retrieval) - Winter 2025
+---
 
-🏆 Experience: Research Assistant (UCI Summer 2024), Tech Director, IIITDMJ Intern
+## 🎯 About Me
 
-📊 GitHub Statistics
-Suyash's GitHub Stats
+- CS student at UC Irvine focused on **AI/ML** and **information retrieval**
+- Interested in **large-scale systems**, **ranking algorithms**, and **search**
+- Building a portfolio for MS programs (UCI, UCLA, NCSU)
 
-Top Languages
+---
 
-🏆 Experience & Achievements
-🎓 Research & Internships
-Research Assistant — UC Irvine (Summer 2024)
+## 🛠️ Tech Stack
 
-Contributed to cutting-edge research in AI and system optimization
+- **Languages**: Python · C++ · JavaScript · Java · SQL  
+- **Areas**: Machine Learning, IR Systems, System Design, Algorithms  
+- **Tools**: Git, Linux, Docker, AWS, PostgreSQL
 
-Collaborated with faculty on research publications
+---
 
-Tech Director — Campus Organization
+## 🚀 Featured Projects
 
-Led development and optimization of ticketing workflow system
+- **[Project 1](#)** – one-line impact-focused description  
+- **[Project 2](#)** – one-line description (IR / systems)  
+- **[Project 3](#)** – one-line description (ML / infra)
 
-Architected system improvements and database optimizations
+---
 
-Managed technical team and oversaw system deployments
+## 📚 Currently
 
-Intern — IIITDMJ
-
-Developed full-stack solutions and gained industry experience
-
-📖 Academic Highlights
-IEEE Research Contributions
-
-Successfully navigated technical interviews with major companie
+- Taking / taken **CS 121 – Information Retrieval**  
+- Working on research and interview prep (DSA + systems)  
+- Open to research-oriented SWE / ML roles and collaborations
