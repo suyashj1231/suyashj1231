@@ -94,6 +94,7 @@ Delivered roughly 50% faster text output on datasets exceeding 700K lines, with 
 
 ## 📚 Currently
 
+-  Working on [Doomscroll Detector](https://github.com/suyashj1231/Doomscroll_detector), an intelligent background utility that uses computer vision to detect phone usage and redirect attention.
 - Deepening knowledge of IR (ranking, evaluation, learning‑to‑rank) and advanced ML  
 - Practicing system design and low‑level performance work  
 - Exploring topics and projects that can mature into research or publication‑worthy work
