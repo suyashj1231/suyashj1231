@@ -60,11 +60,14 @@ Two published papers seem to disagree on whether adversarial images transfer acr
 
 ## Open source
 
-**[Apache Texera](https://github.com/apache/texera)** · Scala, Java · merged PRs:
-- [Remove null padding in reservoir sampling](https://github.com/apache/texera/pull/5606): a data-integrity fix for empty records under uneven worker loads
-- [Apply LakeFS error handling to all call sites](https://github.com/apache/texera/pull/5607): clear errors and correct HTTP status codes in the file service
-- [Honor the File Scan Encoding field](https://github.com/apache/texera/pull/8605)
-- [Test coverage for `ValidationWorkflowService.combineValidation`](https://github.com/apache/texera/pull/8604)
+**[Apache Texera](https://github.com/apache/texera)** · Scala, Java, TypeScript
+
+I work on Texera, an Apache incubating platform from UC Irvine where researchers build and run AI/ML data workflows in the browser.
+
+- Fixed a sampling operator that emitted malformed empty records under uneven worker loads, so downstream results stay clean ([details](https://github.com/apache/texera/pull/5606)).
+- Fixed the File Scan operator ignoring its Encoding setting, so UTF-16 and other non-UTF-8 documents now load as readable text ([details](https://github.com/apache/texera/pull/8605)).
+- Extended LakeFS error handling to every dataset-service call site, so failures return clear messages and correct HTTP status codes ([details](https://github.com/apache/texera/pull/5607)).
+- Added TypeScript unit tests for the workflow editor's validation service, which combines schema and connection checks into the verdict the editor acts on ([details](https://github.com/apache/texera/pull/8604)).
 
 
 ## Experience
