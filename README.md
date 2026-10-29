@@ -38,8 +38,8 @@ Batch renderer with a dynamic texture atlas that draws 10,000+ characters in one
 ### 🗂️ [Stowly](https://github.com/suyashj1231/stowly) · Swift, SwiftUI
 macOS menu-bar app that turns saved Instagram, TikTok, YouTube, LinkedIn and X posts into categorized task cards. Its LLM provider layer falls back from Gemini to a fully local Ollama + Whisper pipeline, and an iPhone-to-Mac relay runs over ntfy.sh. Covered by 123 tests.
 
-### 🔐 [CipherSort](https://github.com/suyashj1231/cyphersort) · Swift, SwiftUI
-On-device file organizer that watches folders with FSEvents, classifies files with OCR and NLP, and routes them into encrypted Cryptomator vaults. It learns new routing rules from your corrections, and no data leaves the machine.
+### 🔐 [CypherSort](https://github.com/suyashj1231/cyphersort) · Python, PyQt6, Ollama
+Watches your Downloads folder, reads the content of each new PDF, image, text file or .docx with a local Ollama model, and files it into a Cryptomator-encrypted vault, creating folders as it goes (every ICS 53 lecture lands in `courses/ics53/`). A review queue shows the suggested folder and the model's reason before anything moves, and every move is logged. Fully offline.
 
 ### 🛡️ [VLM Image Attacks Under Deployment Conditions](https://github.com/suyashj1231/vlm-image-attack-transfer) · Python, PyTorch, MLX
 Two published papers seem to disagree on whether adversarial images transfer across vision-language models. Over 11 experiments spanning 3 model scales, 6 quantization levels and 11 preprocessing pipelines, this study shows that they measure different things: taking *control* of a model (about 0% transfer to an unseen architecture) versus the target text simply being *readable* in the image (40-100%). It also finds that quantization is not a defense, while downscaling to 256 px is. Benign target string only.
