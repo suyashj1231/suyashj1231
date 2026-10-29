@@ -35,7 +35,7 @@
 
 ## 👨‍💻 About Me
 
-- CS undergrad at UC Irvine focused on **machine learning**, **information retrieval**, and **distributed systems**
+- CS  at UC Irvine focused on **machine learning**, **information retrieval**, and **distributed systems**
 - Interested in ranking/search, evaluation metrics, and building reliable, scalable infrastructure
 - Actively building a portfolio geared toward research‑oriented SWE / ML roles and future graduate study
 
