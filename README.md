@@ -26,8 +26,8 @@
 ### ⚡ [Limit Order Book & Matching Engine](https://github.com/suyashj1231/lob-latency-study) · C++
 Rebuilt a price-time-priority order book from a `std::map` + list baseline into a flat, tick-indexed, pool-allocated structure with no heap allocation on the hot path. Per-operation latency dropped 4.5-9.2x (cancel went from 294 ns to 32 ns on a 1M-order book). I wrote the measurement harness too: a cycle-clock histogram for p50-p99.99, a NASDAQ ITCH 5.0 decoder with book-delta replay, and a core-pinned runner instrumented with `perf`.
 
-### 📄 [RAG Document Assistant](https://github.com/suyashj1231/turbo-rag) · Python, AWS, LangChain
-Hybrid retrieval (BM25 plus dense vectors) with Cohere cross-encoder reranking and citation-enforced answers. Runs serverless on Lambda and API Gateway with DynamoDB session memory, and every change goes through a Ragas evaluation gate in CI (faithfulness, answer relevance, context precision).
+### 📄 [turbo-rag](https://github.com/suyashj1231/turbo-rag) · Python, FastAPI
+Question answering over 7,000 book descriptions, written without LangChain or LlamaIndex. Retrieval fuses a hand-written BM25 index with dense MiniLM vectors (reciprocal rank fusion), then reranks with Cohere or a local cross-encoder. Every sentence of an answer must cite a source; a validator retries once and otherwise answers "I don't know". Multi-turn sessions, a FastAPI service shaped for Lambda, and CI that gates each PR on retrieval metrics and Ragas faithfulness, relevancy and context precision.
 
 ### 🔎 [Web Search Engine](https://github.com/suyashj1231/inelastic-search-engine) · Python
 Search engine written from scratch over UCI's ICS web crawl, with no search library. It cleans HTML down to visible text, builds a Porter-stemmed inverted index that boosts title and heading matches, intersects postings smallest-first for Boolean queries, and ranks by TF-IDF blended with PageRank. An optional BART-Large-CNN step writes two-sentence result summaries.
