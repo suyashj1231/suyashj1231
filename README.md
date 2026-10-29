@@ -30,7 +30,7 @@ Rebuilt a price-time-priority order book from a `std::map` + list baseline into 
 Hybrid retrieval (BM25 plus dense vectors) with Cohere cross-encoder reranking and citation-enforced answers. Runs serverless on Lambda and API Gateway with DynamoDB session memory, and every change goes through a Ragas evaluation gate in CI (faithfulness, answer relevance, context precision).
 
 ### 🔎 [Web Search Engine](https://github.com/suyashj1231/inelastic-search-engine) · Python
-Search engine built from scratch over 50,000+ documents. Partial indexing with a K-way merge keeps memory bounded, and queries come back in under 300 ms without any search library. Ranking combines TF-IDF and PageRank, and a BART-Large-CNN model writes a two-sentence summary for each result.
+Search engine written from scratch over UCI's ICS web crawl, with no search library. It cleans HTML down to visible text, builds a Porter-stemmed inverted index that boosts title and heading matches, intersects postings smallest-first for Boolean queries, and ranks by TF-IDF blended with PageRank. An optional BART-Large-CNN step writes two-sentence result summaries.
 
 ### 🖥️ [GPU-Accelerated Terminal Emulator](https://github.com/suyashj1231/OpenGL) · C++, OpenGL
 Batch renderer with a dynamic texture atlas that draws 10,000+ characters in one draw call: 460 FPS, 2 ms frames, and more than 80% of the CPU left free. It runs on a POSIX PTY and prints 700K+ line outputs 50% faster than a CPU-rendered terminal.
@@ -55,7 +55,7 @@ Two published papers seem to disagree on whether adversarial images transfer acr
 | [Eco Flight Finder](https://github.com/suyashj1231/eco-flight-finder) | Flight search ranked by an eco-score that combines carbon emissions and duration | FastAPI, SQLAlchemy, JavaScript |
 | [Doomscroll Detector](https://github.com/suyashj1231/Doomscroll_detector) | Real-time on-device vision that flags phone use and gaze distraction | Python, YOLOv8, MediaPipe, OpenCV |
 | [claude-usage-bar](https://github.com/suyashj1231/claude-usage-bar) | Dependency-free statusline showing Claude Code plan usage live, synced across terminals | Bash |
-| [Flight Database](https://github.com/suyashj1231/airport-db-gui) | 3NF flight database with composite B-tree indices and a Tkinter GUI | Python, SQLite |
+| [Airport Database](https://github.com/suyashj1231/airport-db-gui) | Normalized SQLite airport database with enforced foreign keys and an event-driven Tkinter GUI | Python, SQLite |
 
 ---
 
