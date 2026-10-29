@@ -69,7 +69,7 @@ Two published papers seem to disagree on whether adversarial images transfer acr
 
 ## Experience
 
-- **Student Desktop Analyst, UCI Office of Information Technology** (Dec 2024 - Jun 2026)<br>
+- **Student Desktop Analyst, UCI Office of Information Technology** (Dec 2024 - Present)<br>
   Built an internal support chatbot on a fine-tuned ZotGPT pipeline. Migrated campus IT services from Azure to AWS with no downtime for 3,000+ users, and cut deployment time 40% with GitHub Actions provisioning.
 - **Technical Director, UCI Engineering Student Council** (Jan 2024 - Jun 2026)<br>
   Moved the council's web presence onto one React + Google Cloud platform, which cut feature deploys from 1-2 days to minutes. Built a Flask QR-code attendance system with role-based access control.
