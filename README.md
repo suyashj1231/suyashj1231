@@ -41,9 +41,6 @@ macOS menu-bar app that turns saved Instagram, TikTok, YouTube, LinkedIn and X p
 ### 🔐 [CipherSort](https://github.com/suyashj1231/cyphersort) · Swift, SwiftUI
 On-device file organizer that watches folders with FSEvents, classifies files with OCR and NLP, and routes them into encrypted Cryptomator vaults. It learns new routing rules from your corrections, and no data leaves the machine.
 
-### 🧠 [GPT from Scratch](https://github.com/suyashj1231/neetcode-gpt) · Python, PyTorch
-A GPT built up from hand-written primitives: backprop, attention, transformer blocks, a BPE tokenizer, and a KV cache for fast generation.
-
 ### 🛡️ [VLM Image Attacks Under Deployment Conditions](https://github.com/suyashj1231/vlm-image-attack-transfer) · Python, PyTorch, MLX
 Two published papers seem to disagree on whether adversarial images transfer across vision-language models. Over 11 experiments spanning 3 model scales, 6 quantization levels and 11 preprocessing pipelines, this study shows that they measure different things: taking *control* of a model (about 0% transfer to an unseen architecture) versus the target text simply being *readable* in the image (40-100%). It also finds that quantization is not a defense, while downscaling to 256 px is. Benign target string only.
 
