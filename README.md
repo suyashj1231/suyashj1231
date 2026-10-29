@@ -44,7 +44,6 @@ On-device file organizer that watches folders with FSEvents, classifies files wi
 ### 🧠 [GPT from Scratch](https://github.com/suyashj1231/neetcode-gpt) · Python, PyTorch
 A GPT built up from hand-written primitives: backprop, attention, transformer blocks, a BPE tokenizer, and a KV cache for fast generation.
 
-
 ### 🛡️ [VLM Image Attacks Under Deployment Conditions](https://github.com/suyashj1231/vlm-image-attack-transfer) · Python, PyTorch, MLX
 Two published papers seem to disagree on whether adversarial images transfer across vision-language models. Over 11 experiments spanning 3 model scales, 6 quantization levels and 11 preprocessing pipelines, this study shows that they measure different things: taking *control* of a model (about 0% transfer to an unseen architecture) versus the target text simply being *readable* in the image (40-100%). It also finds that quantization is not a defense, while downscaling to 256 px is. Benign target string only.
 
@@ -60,6 +59,7 @@ Two published papers seem to disagree on whether adversarial images transfer acr
 | [Doomscroll Detector](https://github.com/suyashj1231/Doomscroll_detector) | Real-time on-device vision that flags phone use and gaze distraction | Python, YOLOv8, MediaPipe, OpenCV |
 | [claude-usage-bar](https://github.com/suyashj1231/claude-usage-bar) | Dependency-free statusline showing Claude Code plan usage live, synced across terminals | Bash |
 | [Flight Database](https://github.com/suyashj1231/airport-db-gui) | 3NF flight database with composite B-tree indices and a Tkinter GUI | Python, SQLite |
+
 ---
 
 ## Open source
