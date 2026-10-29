@@ -35,7 +35,7 @@ Search engine built from scratch over 50,000+ documents. Partial indexing with a
 ### 🖥️ [GPU-Accelerated Terminal Emulator](https://github.com/suyashj1231/OpenGL) · C++, OpenGL
 Batch renderer with a dynamic texture atlas that draws 10,000+ characters in one draw call: 460 FPS, 2 ms frames, and more than 80% of the CPU left free. It runs on a POSIX PTY and prints 700K+ line outputs 50% faster than a CPU-rendered terminal.
 
-### 🗂️ [Stowly](https://github.com/suyashj1231/reel-planner) · Swift, SwiftUI
+### 🗂️ [Stowly](https://github.com/suyashj1231/stowly) · Swift, SwiftUI
 macOS menu-bar app that turns saved Instagram, TikTok, YouTube, LinkedIn and X posts into categorized task cards. Its LLM provider layer falls back from Gemini to a fully local Ollama + Whisper pipeline, and an iPhone-to-Mac relay runs over ntfy.sh. Covered by 123 tests.
 
 ### 🔐 [CipherSort](https://github.com/suyashj1231/cyphersort) · Swift, SwiftUI
@@ -44,6 +44,22 @@ On-device file organizer that watches folders with FSEvents, classifies files wi
 ### 🧠 [GPT from Scratch](https://github.com/suyashj1231/neetcode-gpt) · Python, PyTorch
 A GPT built up from hand-written primitives: backprop, attention, transformer blocks, a BPE tokenizer, and a KV cache for fast generation.
 
+
+### 🛡️ [VLM Image Attacks Under Deployment Conditions](https://github.com/suyashj1231/vlm-image-attack-transfer) · Python, PyTorch, MLX
+Two published papers seem to disagree on whether adversarial images transfer across vision-language models. Over 11 experiments spanning 3 model scales, 6 quantization levels and 11 preprocessing pipelines, this study shows that they measure different things: taking *control* of a model (about 0% transfer to an unseen architecture) versus the target text simply being *readable* in the image (40-100%). It also finds that quantization is not a defense, while downscaling to 256 px is. Benign target string only.
+
+---
+
+## More projects
+
+| Project | What it is | Stack |
+|---|---|---|
+| [BusTrack](https://github.com/suyashj1231/bustrack) | iOS tracker for UCI's Anteater Express: live map, favorite stops, bus-is-close alerts, home and lock screen widgets | Swift, SwiftUI, WidgetKit |
+| [Larya](https://larya.vercel.app) | Full-stack storefront for a streetwear brand, with accounts, basket, wishlist and an admin console (live site) | Next.js, TypeScript, Supabase |
+| [Eco Flight Finder](https://github.com/suyashj1231/eco-flight-finder) | Flight search ranked by an eco-score that combines carbon emissions and duration | FastAPI, SQLAlchemy, JavaScript |
+| [Doomscroll Detector](https://github.com/suyashj1231/Doomscroll_detector) | Real-time on-device vision that flags phone use and gaze distraction | Python, YOLOv8, MediaPipe, OpenCV |
+| [claude-usage-bar](https://github.com/suyashj1231/claude-usage-bar) | Dependency-free statusline showing Claude Code plan usage live, synced across terminals | Bash |
+| [Flight Database](https://github.com/suyashj1231/airport-db-gui) | 3NF flight database with composite B-tree indices and a Tkinter GUI | Python, SQLite |
 ---
 
 ## Open source
@@ -53,8 +69,6 @@ A GPT built up from hand-written primitives: backprop, attention, transformer bl
 - [Apply LakeFS error handling to all call sites](https://github.com/apache/texera/pull/5607): clear errors and correct HTTP status codes in the file service
 - [Honor the File Scan Encoding field](https://github.com/apache/texera/pull/8605)
 - [Test coverage for `ValidationWorkflowService.combineValidation`](https://github.com/apache/texera/pull/8604)
-
-Also: [claude-usage-bar](https://github.com/suyashj1231/claude-usage-bar), a dependency-free Bash statusline that shows Claude Code plan usage live and syncs across terminals.
 
 ---
 
