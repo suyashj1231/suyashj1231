@@ -1,19 +1,84 @@
 <h1 align="center">Hi, I'm Suyash 👋</h1>
 
 <p align="center">
-  <strong>CS @ UC Irvine</strong> · AI &amp; ML · Information Retrieval · Systems
+  <strong>M.S. Computer Science @ UC Irvine</strong> · Systems · Search &amp; Retrieval · Applied ML
 </p>
 
 <p align="center">
-  <a href="mailto:suyashj@uci.edu">Email</a> ·
-  <a href="https://www.linkedin.com/in/jain-suyash/">LinkedIn</a> ·
-  <a href="https://jain-suyash.vercel.app" target="_blank">Portfolio</a> ·
-  <a href="https://github.com/suyashj1231">GitHub</a>
+  <a href="mailto:j.suyash1231@gmail.com">Email</a> ·
+  <a href="https://www.linkedin.com/in/jain-suyash">LinkedIn</a> ·
+  <a href="https://suyashjain.app/">Portfolio</a>
 </p>
 
 ---
 
-## ⚡ GitHub Stats
+## About me
+
+- M.S. in Computer Science at UC Irvine (expected June 2028). B.S. from UCI in Computer Science and Business Information Management, double major, GPA 3.75 (June 2026).
+- I like performance work you can measure: latency budgets, memory-bounded indexing, GPU rendering, and the benchmark harnesses that prove the numbers.
+- Open-source contributor to [Apache Texera](https://github.com/apache/texera), the collaborative data-science platform that started at UCI.
+- **Looking for software engineering roles:** new-grad full-time and Summer 2027 internships.
+
+---
+
+## Featured projects
+
+### ⚡ [Limit Order Book & Matching Engine](https://github.com/suyashj1231/lob-latency-study) · C++
+Rebuilt a price-time-priority order book from a `std::map` + list baseline into a flat, tick-indexed, pool-allocated structure with no heap allocation on the hot path. Per-operation latency dropped 4.5-9.2x (cancel went from 294 ns to 32 ns on a 1M-order book). I wrote the measurement harness too: a cycle-clock histogram for p50-p99.99, a NASDAQ ITCH 5.0 decoder with book-delta replay, and a core-pinned runner instrumented with `perf`.
+
+### 📄 [RAG Document Assistant](https://github.com/suyashj1231/turbo-rag) · Python, AWS, LangChain
+Hybrid retrieval (BM25 plus dense vectors) with Cohere cross-encoder reranking and citation-enforced answers. Runs serverless on Lambda and API Gateway with DynamoDB session memory, and every change goes through a Ragas evaluation gate in CI (faithfulness, answer relevance, context precision).
+
+### 🔎 [Web Search Engine](https://github.com/suyashj1231/inelastic-search-engine) · Python
+Search engine built from scratch over 50,000+ documents. Partial indexing with a K-way merge keeps memory bounded, and queries come back in under 300 ms without any search library. Ranking combines TF-IDF and PageRank, and a BART-Large-CNN model writes a two-sentence summary for each result.
+
+### 🖥️ [GPU-Accelerated Terminal Emulator](https://github.com/suyashj1231/OpenGL) · C++, OpenGL
+Batch renderer with a dynamic texture atlas that draws 10,000+ characters in one draw call: 460 FPS, 2 ms frames, and more than 80% of the CPU left free. It runs on a POSIX PTY and prints 700K+ line outputs 50% faster than a CPU-rendered terminal.
+
+### 🗂️ [Stowly](https://github.com/suyashj1231/reel-planner) · Swift, SwiftUI
+macOS menu-bar app that turns saved Instagram, TikTok, YouTube, LinkedIn and X posts into categorized task cards. Its LLM provider layer falls back from Gemini to a fully local Ollama + Whisper pipeline, and an iPhone-to-Mac relay runs over ntfy.sh. Covered by 123 tests.
+
+### 🔐 [CipherSort](https://github.com/suyashj1231/cyphersort) · Swift, SwiftUI
+On-device file organizer that watches folders with FSEvents, classifies files with OCR and NLP, and routes them into encrypted Cryptomator vaults. It learns new routing rules from your corrections, and no data leaves the machine.
+
+### 🧠 [GPT from Scratch](https://github.com/suyashj1231/neetcode-gpt) · Python, PyTorch
+A GPT built up from hand-written primitives: backprop, attention, transformer blocks, a BPE tokenizer, and a KV cache for fast generation.
+
+---
+
+## Open source
+
+**[Apache Texera](https://github.com/apache/texera)** · Scala, Java · merged PRs:
+- [Remove null padding in reservoir sampling](https://github.com/apache/texera/pull/5606): a data-integrity fix for empty records under uneven worker loads
+- [Apply LakeFS error handling to all call sites](https://github.com/apache/texera/pull/5607): clear errors and correct HTTP status codes in the file service
+- [Honor the File Scan Encoding field](https://github.com/apache/texera/pull/8605)
+- [Test coverage for `ValidationWorkflowService.combineValidation`](https://github.com/apache/texera/pull/8604)
+
+Also: [claude-usage-bar](https://github.com/suyashj1231/claude-usage-bar), a dependency-free Bash statusline that shows Claude Code plan usage live and syncs across terminals.
+
+---
+
+## Experience
+
+- **Student Desktop Analyst, UCI Office of Information Technology** (Dec 2024 - Jun 2026)<br>
+  Built an internal support chatbot on a fine-tuned ZotGPT pipeline. Migrated campus IT services from Azure to AWS with no downtime for 3,000+ users, and cut deployment time 40% with GitHub Actions provisioning.
+- **Technical Director, UCI Engineering Student Council** (Jan 2024 - Jun 2026)<br>
+  Moved the council's web presence onto one React + Google Cloud platform, which cut feature deploys from 1-2 days to minutes. Built a Flask QR-code attendance system with role-based access control.
+- **Software Developer, Google Developer Student Club** (Jan - Mar 2024)<br>
+  Built a React Native + Firebase civic reporting app that cut issue resolution time 40%.
+- **Software Engineering Intern, IIITDM Jabalpur** (Apr - Jun 2023)<br>
+  Wrote embedded control firmware for a SERB/DST-funded 3D-printing positioning system.
+
+---
+
+## Tech
+
+**Languages:** Python · C/C++ · Java · JavaScript/TypeScript · Swift · Go · Rust · SQL<br>
+**ML:** PyTorch · Hugging Face · scikit-learn · LangChain · OpenCV · YOLOv8<br>
+**Infra & cloud:** AWS (Lambda, S3, EC2, DynamoDB) · Google Cloud · Docker · Kubernetes · gRPC · GitHub Actions<br>
+**Web & data:** React · Next.js · Node.js · FastAPI · Flask · PostgreSQL · SQLite · Supabase
+
+---
 
 <p align="center">
   <img
@@ -23,87 +88,9 @@
     height="180"
   />
   <img
-    src="https://github-readme-stats-xi-liart.vercel.app/api/top-langs/?username=suyashj1231&layout=compact&theme=transparent&hide_border=true&langs_count=8&bg_color=00000000&title_color=58a6ff&text_color=c9d1d9&hide=jupyter%20notebook,html,css"
+    src="https://github-readme-stats-xi-liart.vercel.app/api/top-langs/?username=suyashj1231&layout=compact&theme=transparent&hide_border=true&langs_count=8&bg_color=00000000&title_color=58a6ff&text_color=c9d1d9&hide=jupyter%20notebook,html,css,tex"
     width="49%"
     alt="Top languages"
     height="180"
   />
 </p>
-
-
----
-
-## 👨‍💻 About Me
-
-- CS  at UC Irvine focused on **machine learning**, **information retrieval**, and **distributed systems**
-- Interested in ranking/search, evaluation metrics, and building reliable, scalable infrastructure
-- Actively building a portfolio geared toward research‑oriented SWE / ML roles and future graduate study
-
----
-
-## 🛠 Tech Stack
-
-**Languages**
-
-- Python · C++ · JavaScript/TypeScript · Java · SQL
-
-**Core Areas**
-
-- Machine Learning &amp; MLOps  
-- Information Retrieval &amp; search systems  
-- Backend &amp; distributed systems  
-- Systems design, performance, and observability  
-
-**Tools &amp; Frameworks**
-
-- PyTorch, scikit‑learn, JAX (if applicable)  
-- Node.js, Express, React/Next.js  
-- PostgreSQL, Redis  
-- Docker, Linux, Git, GitHub Actions, Vercel, AWS (where relevant)
-
----
-
-## 🚀 Featured Projects
-
-### 🔎 [Web Search Engine – Inelastic Search](https://github.com/suyashj1231/Inelastic-Search)
-
-Developed a search engine from scratch, indexing 50,000+ documents with an inverted index and on-disk partial indexing (3-phase merge) to keep memory usage bounded while maintaining query latency under 300 ms without external libraries.  
-Implemented core IR techniques including TF-IDF ranking, Boolean retrieval, Porter stemming, and tokenization, and boosted relevance using PageRank, HITS, and anchor-text indexing for more precise ranking.  
-
-### 🖥️ [OpenGL-Based Terminal Emulator](https://github.com/suyashj1231/OpenGL)
-
-Built a GPU-accelerated terminal achieving 460 FPS on large text screens, reducing frame draw time to 2 ms and freeing over 80% of CPU resources for parallel workloads using GLAD, GLFW, and FreeType (UNIX/Linux).  
-Delivered roughly 50% faster text output on datasets exceeding 700K lines, with smoother scrolling, lower input latency, and reduced system load compared to CPU-rendered terminals.  
-
-
-
----
-
-## 🧪 Experience
-
-- **Research Assistant – UC Irvine**  
-  Worked on problems at the intersection of ML and systems; contributed to experimental design, implementation, and analysis.
-
-- **Tech Director – Student Organization**  
-  Led the redesign of the ticketing and workflow system; owned architecture, performance tuning, and developer experience.
-
-- **Software Engineering Intern – IIITDMJ**  
-  Contributed to full‑stack features, debugging, and code quality improvements.
-
----
-
-## 📚 Currently
-
--  Working on [Doomscroll Detector](https://github.com/suyashj1231/Doomscroll_detector), an intelligent background utility that uses computer vision to detect phone usage and redirect attention.
-- Deepening knowledge of IR (ranking, evaluation, learning‑to‑rank) and advanced ML  
-- Practicing system design and low‑level performance work  
-- Exploring topics and projects that can mature into research or publication‑worthy work
-
----
-
-## 🤝 Let’s Connect
-
-- Open to: research collaborations, infra/ML‑heavy SWE internships, and IR / search‑focused projects  
-- Best ways to reach me: email or LinkedIn (links above)  
-
-If you liked any of my work, a ⭐ on the corresponding repo is always appreciated!
